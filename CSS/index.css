@@ -1,0 +1,259 @@
+body {
+  background-color: #251313;
+  margin: 10px 0 0 0;
+  padding: 0 0 0 0;
+}
+.container-fluid {
+  padding: 0;
+}
+.navbar li {
+  list-style: none;
+  margin: 15px;
+  color: #edead6;
+}
+.navbar h4 {
+  color: #edead6;
+}
+.navbar i {
+  margin: 15px;
+}
+.fa-solid {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+.fa-bars {
+  display: none;
+}
+
+/*HERO*/
+.hero h3 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #edead6;
+  margin: 0;
+  padding: 0;
+}
+.hero h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 96px;
+  font-weight: 1000;
+  color: #d35343;
+}
+.hero p {
+  color: #edead6;
+  font-size: 24px;
+  font-weight: 200;
+  margin: 5px 0 0 0;
+}
+.hero button {
+  color: #d35343;
+  background-color: #edead6;
+  border-style: none;
+  border-radius: 50px;
+  height: 70px;
+  width: 185px;
+  font-size: 24px;
+  margin: 10px 0 0 0;
+}
+.left {
+  padding-left: 120px;
+  box-sizing: border-box;
+}
+.right {
+  border-radius: 10000px 0 0 10000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 888;
+  padding: 0;
+}
+
+/*news*/
+.title {
+  background-color: #d35343;
+  color: #edead6;
+  margin: 0;
+  padding: 0;
+  width: 290px;
+}
+.sales {
+  margin-top: 30px;
+}
+.sales h5 {
+  font-weight: 800;
+  font-size: 24px;
+  color: #edead6;
+}
+.tag {
+  background-color: #d35343;
+  height: 82px;
+  width: 82px;
+}
+.sales button {
+  color: #edead6;
+  font-size: 24px;
+  font-weight: 700;
+  background-color: #d35343;
+  height: 70px;
+  width: 230px;
+  border-style: none;
+}
+.new h3 {
+  font-size: 55px;
+}
+.new h5 {
+  font-size: 30px;
+}
+.new h3,
+.new h5 {
+  font-weight: 800;
+}
+
+/*menu*/
+.menu {
+  background-color: #edead6;
+  border-radius: 120px;
+}
+.menuitem {
+  margin: 0 0 50px 0;
+}
+.menuTitle {
+  color: #d35343;
+  background-color: #251313;
+  border-bottom-right-radius: 120px;
+  border-top-left-radius: 110px;
+  min-height: calc(48px + 250px);
+}
+.menuTitle h3 {
+  font-weight: 800;
+  font-size: 43px;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 0 0;
+}
+.footer .logoFooter {
+  max-height: 160px;
+  max-width: 160px;
+}
+.footer h5 {
+  color: #edead6;
+  font-weight: 600;
+  font-size: 20px;
+}
+.btn-group {
+  width: 100%;
+}
+.footer input[type="text"] {
+  background: #edead6;
+  color: black;
+  width: 90%;
+  max-width: 360px;
+  border: none;
+  border-radius: 15px 0 0 15px;
+  padding: 5px 10px 5px 10px;
+  height: 35px;
+}
+.footer button {
+  border-radius: 0 15px 15px 0;
+  border: none;
+  background: #d35343;
+  color: white;
+  font-weight: 400;
+  padding: 0 20px 0 20px;
+}
+.footerInfo {
+  margin: 22px 0 15px 0;
+}
+.infoList {
+  list-style: none;
+  color: #edead6;
+  font-weight: 150;
+}
+.infoList li {
+  margin: 5px 0 10px 0;
+}
+.infoOption {
+  list-style: none;
+  color: #edead6;
+  font-weight: 90;
+  line-height: 27px;
+  padding: 0 0 0 4%;
+}
+.infoOption li:first-child {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 0 0 8px 0;
+}
+.footer .socialLogo svg {
+  margin: 10px 10px 0 0;
+  height: 30px;
+  width: 30px;
+}
+
+/* Responsive check */
+@media only screen and (max-width: 992px) {
+  .navbar li,
+  .fa-magnifying-glass {
+    display: none;
+  }
+  .fa-bars {
+    display: inline;
+  }
+  .right {
+    margin: 10px 0 10px 0;
+    border-radius: 0;
+  }
+  .left {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  .hero p {
+    padding: 8px 0 18px 0;
+  }
+  .hero h3,
+  .hero h1 {
+    padding: 0;
+    margin: 0;
+  }
+  .hero button {
+    margin: 0 0 30px 0;
+  }
+  .product:nth-last-child() {
+    background-color: red;
+  }
+  .product3 {
+    display: none;
+  }
+  .menuTitle {
+    font-size: 30px
+  }
+}
+@media only screen and (max-width: 576px) {
+  .fa-user,
+  .fa-cart-shopping {
+    display: none;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menuTitle {
+    background: none;
+    text-align: center;
+  }
+  .menublockitem {
+    height: 130px;
+  }
+  .footer .row, .footer .btn-group{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer img {
+    margin: 0 0 20px 0;
+  }
+}
