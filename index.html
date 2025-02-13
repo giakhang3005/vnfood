@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Meta data -->
+    <!-- Hiện trên tab & preview khi share, search hiện trên google -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>Vietnamese food</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -18,6 +20,8 @@
   </head>
 
   <body>
+    <!-- Body data -->
+    <!-- Hiện trong trang web -->
     <div class="container-fluid">
       <!-- Nav -->
       <div class="row nav">
@@ -25,17 +29,15 @@
         <div
           class="navbar col-3 col-sm-4 col-md-3 col-lg-1 justify-content-center align-items-center"
         >
-          <img src="images/logo.png" alt="" />
+          <img src="images/logo.jpg" class="logo" alt="" />
         </div>
 
         <ul
           class="navbar col-1 col-sm-4 col-md-5 col-lg-8 d-flex justify-content-center align-items-center"
         >
-          <li>MENU</li>
-          <li>PROMOTION</li>
-          <li>STORE</li>
-          <li>YOUR ORDER</li>
-          <li>RESERVATION</li>
+          <li><a href="#promotion">Ưu đãi</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
         </ul>
         <div
           class="navbar col-3 col-sm-4 col-md-3 col-lg-2 justify-content-center align-items-center"
@@ -50,40 +52,37 @@
       </div>
 
       <!--hero-->
-
       <div
         class="row hero d-flex flex-column-reverse flex-lg-row overflow-hidden"
       >
         <div
           class="left col-12 col-lg-5 d-flex flex-column justify-content-center"
         >
-          <h3>TASTE OF</h3>
-          <h1>JAPAN</h1>
-          <p>
-            Experience the taste of Japan today <br />
-            with our convenient and reliable <br />
-            food delivery service.
-          </p>
+          <h3>ẨM THỰC</h3>
+          <h1>VIỆT NAM</h1>
+          <p> Thưởng thức hương vị Việt Nam ngay hôm nay <br /> với dịch vụ giao đồ ăn tiện lợi và đáng tin cậy của chúng tôi. </p>
 
           <div class="col-12">
-            <button>Explore <i class="fa-solid fa-chevron-right"></i></button>
+            <a href="#promotion">
+              <button>Khám phá <i class="fa-solid fa-chevron-right"></i></button>
+            </a>
           </div>
         </div>
 
-        <img class="right col-md-12 col-lg-7" src="./images/HERO IMG.png" />
+        <img class="right col-md-12 col-lg-7" src="./images/comtam.jpeg" />
       </div>
 
-      <!--/*news*/-->
-
-      <div class="new">
+      <!--  -->
+      <!--/*promotion*/-->
+      <div class="new" id="promotion">
         <!-- Hot deal title -->
         <div
           class="title col-12 d-flex flex-column justify-content-center align-items-center rounded-end-pill"
           id=""
           style="height: 170px"
         >
-          <h3>TODAY</h3>
-          <h5>HOT DEALS</h5>
+          <h3>Ưu đãi</h3>
+          <h5>Hôm nay</h5>
         </div>
         <div class="row d-flex justify-content-center align-items-center">
           <div class="row sales col-6 col-lg-4 d-flex flex-column">
@@ -97,7 +96,7 @@
                   class="img d-flex justify-content-center align-items-center position-relative rounded-circle mt-3"
                 >
                   <img
-                    src="images/wagyu don.png"
+                    src="images/pho.jpg"
                     alt=""
                     class="rounded-circle"
                   />
@@ -114,20 +113,23 @@
                   </div>
                 </div>
 
-                <h5 class="mt-5 pt-2 mb-4" style="color: #251313">Wagyu Don</h5>
+                <h5 class="mt-5 pt-2 mb-4" style="color: #251313">Phở</h5>
                 <p
                   class="orgprice mb-0 fst-italic text-decoration-line-through"
                 >
-                  176.000 VND
+                  60.000 VND
                 </p>
                 <h5
                   class="mt-0 pt-0"
                   style="color: #d35343; font-size: 20px; font-weight: 800"
                 >
-                  132.000 VND
+                  51.000 VND
                 </h5>
               </div>
-              <button class="mt-4 rounded-4">Add to cart</button>
+              <button class="mt-4 rounded-4">
+                <i class="fa-solid fa-cart-shopping" style="transform: translateY(-2px)"></i>
+                Thêm
+              </button>
             </div>
           </div>
 
@@ -142,7 +144,7 @@
                   class="img d-flex justify-content-center align-items-center position-relative rounded-circle mt-3"
                 >
                   <img
-                    src="images/wagyu don.png"
+                    src="images/banhcan.jpeg"
                     alt=""
                     class="rounded-circle"
                   />
@@ -159,20 +161,23 @@
                   </div>
                 </div>
 
-                <h5 class="mt-5 pt-2 mb-4" style="color: #251313">Wagyu Don</h5>
+                <h5 class="mt-5 pt-2 mb-4" style="color: #251313">Bánh căn</h5>
                 <p
                   class="orgprice mb-0 fst-italic text-decoration-line-through"
                 >
-                  176.000 VND
+                  60.000 VND
                 </p>
                 <h5
                   class="mt-0 pt-0"
                   style="color: #d35343; font-size: 20px; font-weight: 800"
                 >
-                  132.000 VND
+                  51.000 VND
                 </h5>
               </div>
-              <button class="mt-4 rounded-4">Add to cart</button>
+              <button class="mt-4 rounded-4">
+                <i class="fa-solid fa-cart-shopping" style="transform: translateY(-2px)"></i>
+                Thêm
+              </button>
             </div>
           </div>
 
@@ -187,7 +192,7 @@
                   class="img d-flex justify-content-center align-items-center position-relative rounded-circle mt-3"
                 >
                   <img
-                    src="images/wagyu don.png"
+                    src="images/goicuon.jpg"
                     alt=""
                     class="rounded-circle"
                   />
@@ -204,20 +209,23 @@
                   </div>
                 </div>
 
-                <h5 class="mt-5 pt-2 mb-4" style="color: #251313">Wagyu Don</h5>
+                <h5 class="mt-5 pt-2 mb-4" style="color: #251313">Gỏi cuốn</h5>
                 <p
                   class="orgprice mb-0 fst-italic text-decoration-line-through"
                 >
-                  176.000 VND
+                  60.000 VND
                 </p>
                 <h5
                   class="mt-0 pt-0"
                   style="color: #d35343; font-size: 20px; font-weight: 800"
                 >
-                  132.000 VND
+                  51.000 VND
                 </h5>
               </div>
-              <button class="mt-4 rounded-4">Add to cart</button>
+              <button class="mt-4 rounded-4">
+                <i class="fa-solid fa-cart-shopping" style="transform: translateY(-2px)"></i>
+                Thêm
+              </button>
             </div>
           </div>
         </div>
@@ -239,12 +247,13 @@
 
       <!--menu-->
       <div
+      id="menu"
         class="row menu mt-5 pt-5 d-flex justify-content-center position-relative"
       >
         <div
           class="menuTitle col-12 col-sm-4 col-md-3 d-flex justify-content-center position-absolute top-0 start-0 p-5"
         >
-          <h3>CHOOSE YOUR MEALS TYPES</h3>
+          <h3>Chọn bữa ăn của bạn</h3>
         </div>
 
         <div class="menublockitem col-12 col-sm-4 col-lg-3"></div>
@@ -252,7 +261,7 @@
           class="menuitem col-12 col-sm-4 col-lg-3 d-flex flex-column align-items-center justify-content-center"
         >
           <img
-            src="images/donburi.png"
+            src="images/comtam.jpeg"
             alt=""
             class="rounded-circle"
             style="height: 154px; width: 154px"
@@ -266,7 +275,7 @@
               height: 60px;
               width: 210px;
             "
-            >DONBURI</buttton
+            >Cơm tấm</buttton
           >
         </div>
 
@@ -274,7 +283,7 @@
           class="menuitem col-12 col-sm-4 col-lg-3 d-flex flex-column align-items-center justify-content-center"
         >
           <img
-            src="images/ramen.png"
+            src="images/pho.jpg"
             alt=""
             class="rounded-circle"
             style="height: 154px; width: 154px"
@@ -288,7 +297,7 @@
               height: 60px;
               width: 210px;
             "
-            >RAMEN</buttton
+            >Phở</buttton
           >
         </div>
 
@@ -296,7 +305,7 @@
           class="menuitem col-12 col-sm-4 col-lg-3 d-flex flex-column align-items-center justify-content-center"
         >
           <img
-            src="images/curry.jpg"
+            src="images/bundau.jpeg"
             alt=""
             class="rounded-circle"
             style="height: 154px; width: 154px"
@@ -310,7 +319,7 @@
               height: 60px;
               width: 210px;
             "
-            >CURRY</buttton
+            >Bún đậu</buttton
           >
         </div>
 
@@ -318,7 +327,7 @@
           class="menuitem col-12 col-sm-4 col-lg-3 d-flex flex-column align-items-center justify-content-center"
         >
           <img
-            src="images/udon.png"
+            src="images/suicao.jpg"
             alt=""
             class="rounded-circle"
             style="height: 154px; width: 154px"
@@ -332,7 +341,7 @@
               height: 60px;
               width: 210px;
             "
-            >UDON</buttton
+            >Sủi cảo</buttton
           >
         </div>
 
@@ -340,7 +349,7 @@
           class="menuitem col-12 col-sm-4 col-lg-3 d-flex flex-column align-items-center justify-content-center"
         >
           <img
-            src="images/sushi.png"
+            src="images/goicuon.jpg"
             alt=""
             class="rounded-circle"
             style="height: 154px; width: 154px"
@@ -354,7 +363,7 @@
               height: 60px;
               width: 210px;
             "
-            >SUSHI</buttton
+            >Gỏi cuốn</buttton
           >
         </div>
 
@@ -362,7 +371,7 @@
           class="menuitem col-12 col-sm-4 col-lg-3 d-flex flex-column align-items-center justify-content-center"
         >
           <img
-            src="images/sashimi.png"
+            src="images/banhcan.jpeg"
             alt=""
             class="rounded-circle"
             style="height: 154px; width: 154px"
@@ -376,7 +385,7 @@
               height: 60px;
               width: 210px;
             "
-            >SASHIMI</buttton
+            >Bánh căn</buttton
           >
         </div>
 
@@ -384,7 +393,7 @@
           class="menuitem col-12 col-sm-4 col-lg-3 d-flex flex-column align-items-center justify-content-center"
         >
           <img
-            src="images/bento box.jpg"
+            src="images/buncha.jpg"
             alt=""
             class="rounded-circle"
             style="height: 154px; width: 154px"
@@ -398,14 +407,14 @@
               height: 60px;
               width: 210px;
             "
-            >BENTO</buttton
+            >Bún chả</buttton
           >
         </div>
       </div>
 
 
       <!--footer-->
-      <div class="row footer">
+      <div class="row footer" id="contact">
 
         <!-- Logo & Contactus -->
         <div class="row">
@@ -413,10 +422,10 @@
           <img src="images/logo.png" alt="" class="col-12 col-sm-2 logoFooter" />
           <div class="col-sm-3"></div>
           <div class="col-12 col-sm-6">
-          <h5>Contact us</h5>
+          <h5>Liên hệ</h5>
           <div class="btn-group" role="group">
-            <input type="text" placeholder="Enter your email here" />
-             <button>Enter</button>
+            <input type="text" placeholder="your@email.com" />
+             <button>Gửi</button>
           </div>
         </div>
 
@@ -424,22 +433,22 @@
           <div class="col-sm-1"></div>
 
           <ul class="infoList col-12 col-sm-4">
-            <li><b>HOTLINE: </b> 1900 10 87</li>
-            <li><b>ADDRESS: </b> Floor 3 Mega Mall, Vo Nguyen Giap, Thao Dien, HCM City</li>
-            <li><b>WEBSITE: </b> www.japbox.com</li>
+            <li><b>Hotline: </b> 1900 10 87</li>
+            <li><b>Địa chỉ: </b> Lầu 3 Mega Mall, Vo Nguyen Giap, Thao Dien, HCM City</li>
+            <li><b>Website: </b> www.japbox.com</li>
           </ul>
 
           <ul class="infoOption col-12 col-sm-3">
-            <li>ABOUT US</li>
+            <li>Về chúng tôi</li>
             <li>Menu</li>
-            <li>Promotion</li>
-            <li>Store</li>
+            <li>Khuyến mãi</li>
+            <li>Cơ sở</li>
           </ul>
 
           <ul class="infoOption col-12 col-sm-3">
-            <li>TERMS</li>
-            <li>Terms of use</li>
-            <li>Privacy policy</li>
+            <li>Điều khoản</li>
+            <li>Chính sách</li>
+            <li>Thành viên</li>
             <li class="socialLogo"> 
               <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M43.4619 0H2.53806C1.13633 0 0 1.13633 0 2.53806V43.4619C0 44.8637 1.13633 46 2.53806 46H43.4619C44.8637 46 46 44.8637 46 43.4619V2.53806C46 1.13633 44.8637 0 43.4619 0Z" fill="#3D5A98"/>
@@ -477,10 +486,6 @@
   </div>
        
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Boostrap --> 
   </body>
 </html>
