@@ -21,6 +21,7 @@ body {
   margin: 15px;
   color: #edead6;
   text-decoration: none;
+  transition: all 0.1s linear;
 }
 .navbar h4 {
   color: #edead6;
@@ -35,6 +36,9 @@ body {
 }
 .fa-bars {
   display: none;
+}
+.navbar a:hover {
+  color: #e28d81;
 }
 
 /*HERO*/
@@ -67,6 +71,12 @@ body {
   width: 185px;
   font-size: 24px;
   margin: 10px 0 0 0;
+  transition: all 0.1s linear;
+}
+
+.hero button:hover {
+  background-color: #d35343;
+  color: #edead6;
 }
 .left {
   padding-left: 120px;
@@ -282,4 +292,56 @@ body {
   color: #edead6;
   padding: 20px 5vw 20px 0;
   box-sizing: border-box;
+}
+
+#food-info-img {
+  animation: animationInLeft 0.3s ease-in-out;
+}
+
+#food-info-name {
+  animation: animationInRight 0.3s ease-in-out;
+}
+
+#food-info-description {
+  opacity: 0;
+  animation: animationInRight 0.2s ease-in-out forwards;
+  animation-delay: 0.2s;
+}
+
+.item-name-btn {
+  color: #edead6;
+  background-color: #251313;
+  font-size: 24px;
+  height: 60px;
+  width: 210px;
+  transition: all 0.1s linear;
+}
+
+.item-name-btn:hover {
+  border: 1px solid #251313;
+  color: #251313;
+  background: transparent;
+}
+
+
+@keyframes animationInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes animationInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

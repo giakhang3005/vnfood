@@ -59,12 +59,15 @@ const onLoadMenu = () => {
   const menuElement = document.getElementById("menu");
 
   if (!menuElement) return;
-  menuItems.forEach((item) => {
+  menuItems.forEach((item, i) => {
     menuElement.innerHTML += `
       <a
       href="/index.html?id=${item.id}"
       class="menuitem col-12 col-sm-4 col-lg-3 d-flex flex-column align-items-center justify-content-center"
       style="text-decoration: none"
+      data-aos="fade-up"
+      data-aos-duration="800"
+      data-aos-delay=${i * 200}
     >
       <img
         src="${item.image}"
@@ -73,14 +76,7 @@ const onLoadMenu = () => {
         style="height: 154px; width: 154px"
       />
       <buttton
-        class="d-flex justify-content-center align-items-center rounded-pill mt-4"
-        style="
-          color: #edead6;
-          background-color: #251313;
-          font-size: 24px;
-          height: 60px;
-          width: 210px;
-        "
+        class="item-name-btn d-flex justify-content-center align-items-center rounded-pill mt-4"
         >${item.name}</buttton
       >
     </a> 
@@ -96,7 +92,11 @@ const onLoadDiscountItems = () => {
 
   for (let i = 0; i < Math.min(3 || menuItems.length - 1); i++) {
     promotionElement.innerHTML += `
-    <div class="row sales col-6 col-lg-4 d-flex flex-column">
+    <div class="row sales col-6 col-lg-4 d-flex flex-column" 
+    data-aos="fade-up"
+    data-aos-duration="800"
+    data-aos-delay=${i * 200}
+    >
     <div class="d-flex flex-column align-items-center">
       <div
         class="sales rounded-pill d-flex flex-column align-items-center"
@@ -139,13 +139,7 @@ const onLoadDiscountItems = () => {
         ${(menuItems[i].price * 0.85).toLocaleString()} VND
         </h5>
       </div>
-      <button class="mt-4 rounded-4">
-        <i
-          class="fa-solid fa-cart-shopping"
-          style="transform: translateY(-2px)"
-        ></i>
-        Thêm
-      </button>
+      
     </div>
   </div>
     `;
@@ -219,3 +213,14 @@ const menuItems = [
     image: "../images/buncha.jpg",
   },
 ];
+
+// Draft
+{
+  /* <button class="mt-4 rounded-4">
+        <i
+          class="fa-solid fa-cart-shopping"
+          style="transform: translateY(-2px)"
+        ></i>
+        Thêm
+      </button> */
+}
