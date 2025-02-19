@@ -1,3 +1,5 @@
+/** @format */
+
 body {
   background-color: #251313;
   margin: 10px 0 0 0;
@@ -13,7 +15,8 @@ body {
 .container-fluid {
   padding: 0;
 }
-.navbar li, .navbar a {
+.navbar li,
+.navbar a {
   list-style: none;
   margin: 15px;
   color: #edead6;
@@ -75,6 +78,10 @@ body {
   background-repeat: no-repeat;
   z-index: 888;
   padding: 0;
+}
+
+.left-img-hero {
+  border-radius: 0 10000px 10000px 0;
 }
 
 /*news*/
@@ -241,7 +248,7 @@ body {
     display: none;
   }
   .menuTitle {
-    font-size: 30px
+    font-size: 30px;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -260,7 +267,8 @@ body {
   .menublockitem {
     height: 130px;
   }
-  .footer .row, .footer .btn-group{
+  .footer .row,
+  .footer .btn-group {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -268,4 +276,10 @@ body {
   .footer img {
     margin: 0 0 20px 0;
   }
+}
+
+.food-info {
+  color: #edead6;
+  padding: 20px 5vw 20px 0;
+  box-sizing: border-box;
 }
